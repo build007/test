@@ -1,9 +1,7 @@
 version: 2
 jobs:
   build:
-    working_directory: ~/code
-    docker:
-      - image: circleci/buildpack-deps:bionic-curl
+    machine: true
     steps:
       - run:
           name: list
