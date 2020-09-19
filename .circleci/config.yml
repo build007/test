@@ -3,7 +3,7 @@ jobs:
   build:
     working_directory: ~/code
     docker:
-      - image: cimg/base:2020.01
+      - image: circleci/buildpack-deps:18.10
     steps:
       - run:
           name: list
