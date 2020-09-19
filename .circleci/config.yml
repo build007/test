@@ -3,7 +3,7 @@ jobs:
   build:
     working_directory: ~/code
     docker:
-      - image: circleci/buildpack-deps:focal-curl
+      - image: cimg/base:2020.01
     steps:
       - run:
           name: list
