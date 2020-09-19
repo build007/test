@@ -3,7 +3,7 @@ jobs:
   build:
     working_directory: ~/code
     docker:
-      - image: circleci/buildpack-deps:18.10
+      - image: circleci/buildpack-deps:bionic-curl
     steps:
       - run:
           name: list
